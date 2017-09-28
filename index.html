@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Web page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="index.css" rel="stylesheet">
+    
+  
+    
+    
+</head>
+<body>
+    <header>
+        <div class="menu_logo">
+            <a href="#"><img src="images/direct-logo.png"></a>
+        </div>
+        <div class="menu_tags">
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOW IT WORKS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CASE STUDIES</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <section>
+        <div class="menu_dropdown">
+            <div class="menu_icon"><img src="images/menu.png"></div>
+            <div class="container">
+                <div class="row little-menu">
+                        <a href="#"><div class="col-sm-12">HOME</div></a>
+                        <a href="#"><div class="col-sm-12">HOW IT WORKS</div></a>
+                        <a href="#"><div class="col-xs-12">ABOUT US</div></a>
+                        <a href="#"><div class="col-xs-12">CASE STUDIES</div></a>
+                        <a href="#"><div class="col-xs-12">FAQ</div></a>
+                        <a href="#"><div class="col-xs-12">CONTACT US</div></a>
+                 </div>
+            </div>
+        </div>        
+        
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 direct_mail" style="border:1px solid black">
+                        <div class="image_text">
+                        <div class="image_title"><p>EFFORTLESSLY COMBINE YOUR CLIENTS'</p></div>
+                        <div class="image_name"><p>DIRECT MAIL</p></div>
+                        <div class="unwith">
+                            <div class="underline"></div>
+                            <div class="with"><p>with</p></div>
+                            <div class="underline"></div>
+                        </div>    
+                        <div class="advertising"></div>
+                        <div class="schedule"><a href="#">SCHEDULE A FREE DEMO</a></div>
+                    </div>
+                </div>    
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div class="row advert">
+                <div class="col-md-3 col-sm-3 col-xs-6 icon-cont icon-cont-first">
+                    <img src="images/connect.png">
+                    <p>REAL TIME TRACKING</p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 icon-cont">
+                    <img src="images/dollars.png">
+                    <p>PROVEN PROFITABLE</p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 icon-cont">
+                    <img src="images/settings.png">
+                    <p>MARKETING TOOLS</p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6 icon-cont">
+                    <img src="images/clock.png">
+                    <p>QUICK & EASY SETUP</p>
+                </div>
+
+
+
+            </div>
+
+            <div class="row adv-container">
+                <div class="left-section col-md-6 col-sm-6 col-xs-12">
+                    <h1>Call Tracking</h1>
+                    <p>The call tracking feature of DirectMail2.0 allows clients to track exactly how many calls they receive from each campaign and allows them to listen to recordings of their phone calls to ensure their reception and sales process is running smoothly. Calls are directed to the client's business phone but recorded and tracked through call tracking software. This feature also helps printers and ad agencies for clients who do not do their own accurate tracking.</p>
+                </div>
+                <div class="right-section col-md-6 col-sm-6 col-xs-12">
+                    <img src="images/image1.jpg">
+                </div>
+            </div>
+
+            <div class="row adv-container">
+                <div class="right-section col-md-6 col-sm-6 col-xs-12">
+                    <img src="images/image1.jpg">
+                </div>
+                <div class="left-section second-post col-md-6 col-sm-6 col-xs-12">
+                    <h1>Mail Tracking</h1>
+                    <p>The mail tracking feature shows clients the predicted date for mail delivery, as well as the actual delivery dates. This gives clients the ability to line up additional staff as needed. It also gives mail houses and marketing companies a simple tool to prove mail was delivered as promised.</p>
+                </div>
+            </div>
+            <div class="row adv-container">
+                <div class="left-section third-post col-md-6 col-sm-6 col-xs-12">
+                    <h1>Call Tracking</h1>
+                    <p>The call tracking feature of DirectMail2.0 allows clients to track exactly how many calls they receive from each campaign and allows them to listen to recordings of their phone calls to ensure their reception and sales process is running smoothly. Calls are directed to the client's business phone but recorded and tracked through call tracking software. This feature also helps printers and ad agencies for clients who do not do their own accurate tracking.</p>
+                </div>
+                <div class="right-section col-md-6 col-sm-6 col-xs-12">
+                    <img src="images/image1.jpg">
+                </div>
+            </div>  
+            
+           
+
+        </div>
+
+
+    </section>
+    <footer>  
+        <div class=" email">
+            <div class="footer-title"><p>See It Live in Action!</p></div>
+            <div class="input-email"><input type="text" placeholder="ENTER YOUR EMAIL ADDRESS" name="email"></div>
+            <div class="button"><a href="#">SCHEDULE A FREE DEMO</a></div>
+        </div>
+    </footer>
+   
+    <script type="text/javascript">
+
+        
+        $('.menu_icon').click(function() {
+
+            if($('.little-menu').css('display')=='none')
+            {    
+                $('.little-menu').show(400);
+
+            } else {
+                $('.little-menu').hide(400);
+            }
+        })
+        // $(window).click(function(event){
+        //     if(!event.target.matches('.little-menu') && !event.target.matches('.menu_icon'))
+        //         $('.little-menu').hide(400);
+        // })
+        
+
+    </script>   
+</body>
+</html>
