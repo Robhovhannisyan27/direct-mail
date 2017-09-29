@@ -1,0 +1,420 @@
+@mixin fontsize($size){
+	font-size: $size +px !important
+}
+@mixin width($width){
+	width: $width + px !important
+}
+header {
+	@include width(1110);
+	margin: 0 auto;	
+	height: 150px;
+}
+.menu_logo {
+	float: left;
+	width: 20%;
+	img:hover{
+		opacity: 0.8;
+		cursor: pointer;		
+	}
+}
+.menu_tags{
+	width: 80%;
+	float: left;
+}
+.menu{
+	list-style-type: none;
+	float: right;
+	width: 100%;
+	margin-top: 80px;
+
+	li{
+		float: left;
+	}
+ 	li a{
+		color: #000000;
+    	font-size: 16px;
+    	letter-spacing: 1px;
+    	padding: 10px 22px;
+	}
+}	
+
+.menu_dropdown{
+	display: none;
+}
+.menu_icon{
+	
+	position: absolute;
+	float: right;
+	right: 5%;
+	top: 10%;
+	cursor: pointer;
+}
+
+.little-menu{
+	display: none;
+	text-align: center;
+	position: relative;
+
+	div{
+		width: 100%;
+		border:1px solid black;
+		padding: 8px 0;
+	}
+	div:hover{
+		cursor: pointer;
+	    transform: scale(1.03);
+	    box-shadow: 0 0 7px rgba(0,0,0,0.13);
+	}
+}	
+.direct_mail{
+	background: url(images/image1.png) no-repeat;
+	height: 500px;
+	background-size: 100% auto;
+
+
+	.image_text{
+		color: white;
+		width: 70%;
+		left:50%;
+		transform: translateX(-50%);
+		position: absolute;
+		line-height: 70px;
+		margin-top: 70px;
+
+		.image_title{
+			font-size: 39px;	
+		}
+		.image_name{
+			font-size: 129px;
+		}
+		.with{
+			font-family: 'WisdomScript';
+		    font-size: 38px;
+		    display: inline-block;
+		}
+		.underline{
+			border-top: 3px solid #ffffff;
+		    width: 371px;
+		    height: 10px;	
+		    display: inline-block;
+		}
+		.advertising{
+			width: 100%;
+			background: url(images/dm_line.png) no-repeat;
+			background-size: 100% auto;
+			height: 50px;
+		}
+
+		.schedule{
+			width: 50%;
+			text-align: center;
+			margin:	auto;
+			margin-top: 20px;
+
+			a{
+				padding: 10px;
+				border:3px solid white;
+				border-radius: 5%;
+				font-size: 28px;
+				color: white;
+			}
+		}
+	}
+}	
+.advert{
+	padding: 35px 100px;
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+
+	.icon-cont{
+		text-align: center;
+		border-left: 1px solid #e7e7e7;
+	
+		.icon-cont-first{
+			border-left:none !important; 
+			img{
+				margin-top: 10px;
+				margin-bottom: 14px;
+			}
+		}
+		p{
+			font-weight: bold;
+			font-size: 18px;
+			width: 80%;
+			margin: 0 auto;
+			line-height: 18px;
+		}
+		img{
+			margin-bottom: 10px;
+		}	
+	}
+}
+.adv-container{
+	margin-top: 30px;
+	padding: 0 100px;
+	border-bottom: 1px solid #e7e7e7;
+	padding-bottom: 80px;
+
+	.left-section{
+		margin-top: 40px;
+
+		h1{
+			color: #6ec800;
+		}
+		p{
+		    color: #333333;
+		    font-size: 16px;
+		    line-height: 24px;
+		    padding-right: 45px;
+		}
+	}
+	.second-post h1{
+		color: #e3007a;
+	}
+	.third-post h1{
+		color: #ff9600;
+	}
+
+
+	.right-section{
+		img{
+			width: 100%;
+			margin-top: 10px; 
+			
+		}
+	}
+}
+.second-post{
+	padding-left: 45px;
+	padding-right: 0px;
+}
+footer{
+	background-image:url(images/footer.png);
+	background-repeat: no-repeat;
+    padding-bottom: 255px;
+    background-position: bottom;
+    background-size: 100% auto;
+	margin-top: 150px;
+
+	.email{
+		text-align: center;
+	
+		.footer-title p{
+			font-size: 50px;
+		}
+		.input-email input{
+			width: 400px;
+			font-size: 17px;
+			padding: 18px 38px;
+			border-radius: 20px;
+			border:{
+				left:1px solid grey;
+				right: 1px solid grey;
+				top: 1px solid black;
+				bottom: 1px solid black;
+			}
+			text-align: center;
+		}
+		.button{
+			margin-top: 30px;
+			a{
+				border-radius: 20px;
+			    padding: 18px 34px;
+			    font-size: 28px;
+			    border:1px solid #e3007a;
+			    background-color: #e3007a;
+			    color: #ffffff;
+			}
+		}
+	}
+}
+	
+@media screen and (max-width: 1199px) {
+	header{
+		width: 950px;
+	}
+	.menu{
+	 	li a{
+	    	padding: 10px 12px;
+	    }
+	}
+	.image_text{
+		margin-top: 35px !important;
+	}
+	.image_title{
+		@include fontsize(32);	
+	}
+	.image_name{
+		@include fontsize(104);
+	}
+	.underline{
+	    @include width(294);
+	}
+	.schedule{
+		width: 60% !important;
+	}
+	
+	.adv-container{
+		.right-section{
+			margin-top: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 991px){
+	header{
+		width: 800px;
+	}
+	.menu li a{
+	    padding: 10px 8px;
+	    @include fontsize(14);
+	    letter-spacing: 0px;
+	    
+	}
+	.menu_logo img{
+		@include width(180);
+		margin-top: 12px;
+	}
+	.direct_mail{
+		height: 400px;
+	}
+	.image_text{
+		
+		line-height: 40px !important;
+	}
+	.image_title{
+		@include fontsize(25);
+	}
+	.image_name{
+		@include fontsize(82);
+	}
+	.underline{
+	    @include width(229);
+	}
+	.schedule{
+		width: 80% !important;
+	}
+	.with{
+	    @include fontsize(30);
+	}
+	.advert{
+		padding: 35px 0px;
+	}
+	.adv-container{
+		padding: 0;
+		padding-bottom: 80px;
+	}
+	.left-section{
+		margin-top: 30px;
+	}
+}
+
+
+@media screen and (max-width: 758px){
+	.menu{
+		display: none;
+	}
+	.menu_dropdown{
+		display: block;
+	}
+	.advertising{
+		width:75% !important;
+	}
+	.direct_mail{
+		height: 300px;
+	}
+	.image_text{
+		line-height: 30px !important;
+		width: 100% !important;
+		margin-top: 10px !important;
+	}
+	.image_title{
+		@include fontsize(23);
+		text-align: center;	
+	}
+	.image_name{
+		@include fontsize(80);
+		text-align: center;
+	}
+	.underline{
+	    @include width(215);
+	}
+	.unwith{
+		text-align: center;			
+	}
+	.schedule{
+		width: 80% !important;
+	}
+	.advertising{
+		width: 70%;
+		margin: 0 auto;  
+	}
+	.icon-cont:nth-child(2){
+		margin-bottom: 30px;
+	}
+	.left-section p{   
+	    padding-right: 0px;
+	}
+	.right-section{
+		margin-top: 10px !important;
+	}
+}
+@media screen and (max-width: 533px){
+	.direct_mail{
+		height: 200px !important;
+
+		.image_title{
+			@include fontsize(15);
+			line-height: 15px;
+		}
+	}
+
+	.image_name{
+		@include fontsize(50);
+	}
+	.underline{
+	    @include width(130);
+	}
+
+	.schedule{
+		width: 90% !important;
+		margin-top: 10px !important;
+		a{
+			@include fontsize(15);
+
+		}
+	}
+	.advertising{
+		display: none;
+		width: 90% !important;  
+	}
+	
+	.left-section{
+		text-align: center;
+		p{
+			padding-right: 0px !important;
+		}
+	}
+	.second-post{
+		padding-left: 0px !important;
+	}
+	
+	.footer-title p{
+		@include fontsize(35);
+	}
+	.input-email input{
+		@include width(300);
+		@include fontsize(14);
+		padding: 18px 30px !important;
+		border-radius: 20px;
+		text-align: center;
+	}
+	.button a{
+		border-radius: 20px;
+	    padding: 18px 30px !important;
+	    @include fontsize(20);
+	    border:1px solid #e3007a;
+	    background-color: #e3007a;
+	    color: #ffffff;
+	}
+}

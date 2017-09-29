@@ -1,0 +1,19 @@
+{
+  "name": "htmlcss",
+  "version": "1.0.0",
+  "description": "html/css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robhovhannisyan27/direct-mail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Robhovhannisyan27/direct-mail/issues"
+  },
+  "homepage": "https://github.com/Robhovhannisyan27/direct-mail#readme"
+}
