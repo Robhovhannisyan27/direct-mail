@@ -125,13 +125,13 @@ header {
 	padding: 35px 100px;
 	border-top: 1px solid #e7e7e7;
 	border-bottom: 1px solid #e7e7e7;
-
+	.icon-cont:first-child{
+				border-left:none !important; 
+			}
 	.icon-cont{
 		text-align: center;
 		border-left: 1px solid #e7e7e7;
-	
 		.icon-cont-first{
-			border-left:none !important; 
 			img{
 				margin-top: 10px;
 				margin-bottom: 14px;
@@ -188,6 +188,20 @@ header {
 	padding-left: 45px;
 	padding-right: 0px;
 }
+::-webkit-input-placeholder { /* Chrome */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: red;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: red;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: red;
+  opacity: 1;
+}
 footer{
 	background-image:url(images/footer.png);
 	background-repeat: no-repeat;
@@ -202,11 +216,13 @@ footer{
 		.footer-title p{
 			font-size: 50px;
 		}
+
 		.input-email input{
 			width: 400px;
 			font-size: 17px;
 			padding: 18px 38px;
 			border-radius: 20px;
+			color: black;
 			border:{
 				left:1px solid grey;
 				right: 1px solid grey;
@@ -357,6 +373,9 @@ footer{
 	}
 	.right-section{
 		margin-top: 10px !important;
+	}
+	.second-post{
+		padding-left: 0px !important;
 	}
 }
 @media screen and (max-width: 533px){
